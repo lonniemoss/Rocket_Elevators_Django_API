@@ -22,8 +22,8 @@ $ python manage.py runserver
 
 # Endpoints
 
-http://127.0.0.1:8000/api/recognize
+post: http://127.0.0.1:8000/api/recognize
 
-http://127.0.0.1:8000/api/list
+get: http://127.0.0.1:8000/api/list
 
-http://127.0.0.1:8000/api/employee
+post: http://127.0.0.1:8000/api/employee
