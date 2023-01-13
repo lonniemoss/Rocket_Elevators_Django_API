@@ -8,8 +8,8 @@ class Employees(models.Model):
     lastname = models.CharField(max_length=255, blank=True, null=True)
     email = models.CharField(max_length=255, blank=True, null=True)
     password = models.CharField(max_length=255, blank=True, null=True)
-    created_at = models.DateTimeField()
-    updated_at = models.DateTimeField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     facial_keypoints = models.ImageField(upload_to='images/', blank=True, null=True)
 
     class Meta:
